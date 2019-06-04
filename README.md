@@ -18,6 +18,8 @@ One question per day
 
 
 ### 2019-06-04
-> react 相关
-1. react生命周期   
+
+**React 相关**   
+
+1.react生命周期
 [解题](https://github.com/hanfengmi/One-question-per-day/issues/2)
