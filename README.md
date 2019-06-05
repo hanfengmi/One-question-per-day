@@ -31,6 +31,7 @@ react生命周期
 2. refs的作用
 3. 高阶组件
 4. super(props)的作用
+5. state和props的区别
 
 [解题](https://github.com/hanfengmi/One-question-per-day/issues/3)
 
