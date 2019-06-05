@@ -29,14 +29,18 @@ react生命周期
 ---
 ### 2019-06-05
 
-1. 受控组件
-2. refs的作用
-3. 高阶组件
-4. super(props)的作用
-5. state和props的区别
+1. state和props的区别
+2. 受控组件与非受控组件
+3. super(props)的作用
+4. react 类定义与函数定义的区别
+
 
 [解题](https://github.com/hanfengmi/One-question-per-day/issues/3)
 
+### 2019-06-06
+
+1. refs的作用
+2. 高阶组件
 
 
 
