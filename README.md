@@ -16,6 +16,7 @@ One question per day
 ```
 [解题](https://github.com/hanfengmi/One-question-per-day/issues/1)
 
+***
 
 **React 相关**   
 
@@ -25,6 +26,7 @@ react生命周期
 
 [解题](https://github.com/hanfengmi/One-question-per-day/issues/2)
 
+---
 ### 2019-06-05
 
 1. 受控组件
