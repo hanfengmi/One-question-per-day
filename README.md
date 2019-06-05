@@ -17,9 +17,24 @@ One question per day
 [解题](https://github.com/hanfengmi/One-question-per-day/issues/1)
 
 
-### 2019-06-04
-
 **React 相关**   
 
-1.react生命周期
+### 2019-06-04
+
+react生命周期   
+
 [解题](https://github.com/hanfengmi/One-question-per-day/issues/2)
+
+### 2019-06-05
+
+1. 受控组件
+2. refs的作用
+3. 高阶组件
+4. super(props)的作用
+
+[解题](https://github.com/hanfengmi/One-question-per-day/issues/3)
+
+
+
+
+
