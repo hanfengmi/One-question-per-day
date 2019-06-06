@@ -16,9 +16,7 @@ One question per day
 ```
 [解题](https://github.com/hanfengmi/One-question-per-day/issues/1)
 
-***
-
-**React 相关**   
+***  
 
 ### 2019-06-04
 
@@ -28,6 +26,8 @@ react生命周期
 
 ---
 ### 2019-06-05
+
+React 
 
 1. state和props的区别
 2. 受控组件与非受控组件
@@ -39,8 +39,23 @@ react生命周期
 
 ### 2019-06-06
 
+React
+
 1. refs的作用
 2. 高阶组件
+
+### 2019-06-07
+
+1. 你对cookie，session，token的理解
+2. Promise 和 async/await 和 callback的区别 
+3. Promise有没有解决异步的问题（promise链是真正强大的地方）
+4. Promise和setTimeout的区别（Event Loop）
+
+[解题](https://github.com/hanfengmi/One-question-per-day/issues/4)
+
+
+
+
 
 
 
