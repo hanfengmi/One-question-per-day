@@ -39,20 +39,19 @@ React
 
 ### 2019-06-06
 
+1. Promise和setTimeout的区别
+2. Promise 和 async/await 和 callback的区别 
+
+
+[解题](https://github.com/hanfengmi/One-question-per-day/issues/4)
+
+
+### 2019-06-07
+
 React
 
 1. refs的作用
 2. 高阶组件
-
-### 2019-06-07
-
-1. 你对cookie，session，token的理解
-2. Promise 和 async/await 和 callback的区别 
-3. Promise有没有解决异步的问题（promise链是真正强大的地方）
-4. Promise和setTimeout的区别（Event Loop）
-
-[解题](https://github.com/hanfengmi/One-question-per-day/issues/4)
-
 
 
 
