@@ -64,7 +64,7 @@ React
 [解题](https://github.com/hanfengmi/One-question-per-day/issues/5)
 
 ```
-   ^^^^^^^^^^^^^
+   ^^^^^^^^^^^^^ 
   |  ~~~    ~~~ |
   |   @      @  |3
   |      &      |
