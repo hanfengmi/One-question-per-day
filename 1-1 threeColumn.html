@@ -5,9 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>threeColum</title>
+    <style>
+        html,body {
+            margin:0;
+            padding:0;
+        }
+        .left-center-right {
+            width:100%;
+            height:200px;
+            margin:0 0 20px 0 ;
+        }
+        .left-center-right div{
+            float:left
+        }
+        .left {
+            height:200px;
+            width:200px;
+            margin-left:-100%;
+            background: red;
+        }
+        .right {
+            height:200px;
+            width:200px;
+            margin-left:-200px;
+            background: blue;
+        }
+        .center {
+            height:200px;
+            width:100%;
+            background: yellow;
+            padding:0 200px;
+            box-sizing: border-box;
+        }
+
+        /* section2 */
+        .left-center-right2 div{
+            float:left
+        }
+
+        .left-center-right2 {
+            width:100%;
+            height:200px;
+            margin:0 0 20px 0 ;
+        }
+
+        .left2 {
+            height:200px;
+            width:200px;
+            margin-left:-100%;
+            background: red;
+        }
+        .right2 {
+            height:200px;
+            width:200px;
+            margin-left:-200px;
+            background: blue;
+        }
+        .center2 {
+            height:200px;
+            width:100%;
+            background: yellow;
+        }
+        .content2 {
+            margin:0 200px;
+        }
+        
+        /* section3 */
+        .left-center-right3 {
+            width:100%;
+            height:200px;
+            margin:0 0 20px 0 ;
+            position: relative;
+        }
+        .left3 {
+            position: absolute;
+            left:0;
+            height:200px;
+            width:200px;
+            background: red;
+        }
+        .right3 {
+            position: absolute;
+            right:0;
+            height:200px;
+            width:200px;
+            background: blue;
+        }
+        .center3 {
+            position: absolute;
+            height:200px;
+            background: yellow;
+            left:200px;
+            right:200px;
+        }
+
+        /* section4 */
+        .left-center-right4 {
+            width:100%;
+            height:200px;
+            margin:0 0 20px 0 ;
+            display:flex;
+        }
+        .left4 {
+            height:200px;
+            min-width:200px;
+            background: red;
+        }
+        .right4 {
+            height:200px;
+            min-width:200px;
+            background: blue;
+        }
+        .center4 {
+	        flex:1 1 auto;
+            background: yellow;
+            left:200px;
+            right:200px;
+        }
+
+
+
+
+    </style>
 </head>
 <body>
+    <article class="left-center-right">
+        <div class="center"> 123</div>
+        <div class="left"> adasds</div>
+        <div class="right"> QWEEW</div>
+    </article>
+
+
+
     
+    <div class="left-center-right2">		
+        <div class="center2">
+            <div class="content2">双飞翼</div>		
+        </div>
+        <div class="left2">left</div>
+        <div class="right2">right</div>						
+    </div>
+
+
+    <div class="left-center-right3">		
+        <div class="center3">position</div>
+        <div class="left3">left</div>
+        <div class="right3">right</div>						
+    </div>
+
+    <div class="left-center-right4">	
+        <div class="left4">left</div>
+        <div class="center4">flex</div>
+        <div class="right4">right</div>						
+    </div>
     
 </body>
 </html>

@@ -2,8 +2,9 @@
 
 ### CSS
 1. 怎么实现三栏布局？
-圣杯布局、双飞翼布局 
-()[]
+圣杯布局、双飞翼布局、定位、flex等。。。
+
+[code](https://github.com/hanfengmi/One-question-per-day/blob/master/1-1%20threeColumn.html)
 
 ***
 2. 垂直居中怎么做
