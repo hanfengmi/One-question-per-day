@@ -109,6 +109,23 @@ React
 ```
 [解题](https://github.com/hanfengmi/One-question-per-day/issues/7)
 
+### 2019-06-13
+基础知识
+
+1. 数据类型的分类和判断
+2. 原型、原型链、继承、构造函数、实例
+3. 有几种方式可以实现继承，用原型实现继承有什么缺点，解决办法
+4. 作用域、作用域链、闭包
+5. arguments 对象
+```
+    <_>
+    |ö|        
+    -|-Æ         orz  orz  orz  orz
+    / \            orz  orz  orz  orz 
+                     orz  orz  orz  orz
+```
+[解题](https://github.com/hanfengmi/One-question-per-day/issues/8)
+
 
 
 
