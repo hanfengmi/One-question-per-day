@@ -9,34 +9,120 @@
 
 ***
 2. 垂直居中怎么做
+    display:flex;
+    justify-content: center;
+    align-item:center;
+
+    position:relative
+    item {
+        position:absolute;
+        left:50%;
+        top:50%;
+        height:30%;
+        width:50%;
+        margin:-15% 0 0 -25%;
+    }
+
+    position:relative
+    item {
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50% -50%);
+    }
+
 
 3. 盒模型
+IE: 怪异盒模型 margin+content(border+padding+text)
+W3C : margin+border+padding+content
 
 4. css单位
+px vh % em cm mm
 
 5. css选择器
 
+**基本选择器**
+*通配符
+ID选择器
+CLASS选择器
+标签选择器
+**组合选择器**
+a,b a和b元素
+a b a里面的选择器
+a + b 紧邻a后面的b选择器
+a > b a所有子元素b
+**属性选择器**
+a['checked']
+a['val = attr'] a所有val属性等于attr的标签
+a['val ^= attr'] a attr开头的
+a['val $= attr'] a attr结尾的
+
+**选择伪类**
+a:first-child()
+a:hover
+a:focus
+a:brfore
+a:after
+
+**结构性伪类**
+a:nth-child(n) 匹配a的第n个元素
+a:nth-last-child(n) 匹配a的倒数第n个元素
+a:nth-of-type(n) 只匹配同种元素
+
 6. 层叠上下文
+层叠上下文，简单的理解，就是元素所在的一个牢笼。如果创建了这个牢笼，那它本身和它的子元素都处于这个牢笼下。
+定位不是static，或者opacity不为1都会创建一个层叠上下文
 
 7. 常见页面布局？响应式布局？
 
+
 8. BFC
+块状格式化上下文，
+
+根元素或包含根元素的元素
+float属性不为none;
+position为absolute或fixed
+display为inline-block, table-cell, table-caption, flex, inline-flex
+overflow不为visible( hidden,scroll,auto, )
+
+块格式化上下文对浮动定位与清除浮动都很重要
 
 9. css预处理器
 
+less scss
+嵌套语法  使用变量   mixin（直接在目标位置混入另一个类样式 、 定义一个不输出的样式片段）
+
 10. css3新特性
+Word-wrap & Text-overflow
+Gradient 渐变
+shadow
+transition trnasform animation
 
 11. 相邻的两个inline-block节点为什么会出现间隔，该如何解决
+书写习惯
+
+inline写在一行
+font-size：0后font-size：14px
+margin负值
+letter-spacing负值
 
 12. meta viewport 移动端适配
 
+js设置根字节，css使用rem+媒体查询
+
 13. CSS实现宽度自适应100%，宽高16:9的比例的矩形
+父级设置padding-bottom:56.25%
 
 14. rem 布局的优缺点
  
+
 15. 画三角形
 
+border
+transform
+
 16. 1px 边框问题
+scaleY(0.2)
 
 ### JS
 
@@ -175,10 +261,33 @@
 ### react
 
 1. MVVM的理解
+mvvm => modal+view+viewModel
+modal:对应react 中组件的方法业务逻辑，redux+react-redux，
+view:虚拟Dom转化的真实Dom.
+viewmodel:jsx,vertal Dom的语法糖。
 
 2. 如何实现一个自定义组件，不同组件之间如何通信的？
+function 定义无状态组件
+    > 组件不会被实力化，没有this对象，没有生命周期函数
+
+
+extends React.Component
+    > 
+
+    父->子 props
+    子->父 父传子function,子调用return value
+
+    兄弟=> 共同父级状态 || redux
 
 3. 生命周期
+
+                        getDefaultProps
+                        getInitialState
+                        ComponentWillMount
+                              render
+                        ComponentDidMount
+            <=           ShouldComponentUpdate         ComponentWillUnmount
+
 
 4. 虚拟dom的原理
 
@@ -196,22 +305,38 @@
 ### HTTP
 
 1. 跨域
+// 不同的域名、协议、端口会造成跨域
+jsonp跨域
+cors 后端控制跨域
 
 2. HTTP 报文
 
 3. 从输入 URL 到页面加载全过程
 
 4. xss，csrf
+xss又叫css,跨站脚本攻击分为：反射型、存储型、操作Dom
+防范：将用户输入转码，服务端输出检查，HttpOnly
+
+csrf:跨站请求伪造：截取信任用户向服务器发起请求
+防范：添加验证码，使用token
 
 ### webpack
 
 1. 打包原理
+> 模块打包机制，识别模块依赖来打包项目代码。
+主要功能：打包(将多文件打包成一个文件，减少服务力压力)；转化（将预编译语言转化成浏览器识别语言）；优化（性能优化，压缩）
+> 把所有依赖打包成一个bundle.js文件，通过代码分割成单元片段并按需加载。
 
 2. 打包插件
+内置：ProvidePlugin ，引入$ jquery
+打包：HtmlWebpackPlugin -> 重构入口文件，动态添加<Link><Script>
+优化:UglifyJsPlugin(压缩代码)，CommonsChunkPlugin（合并公共组件为单独文件），MiniCssExtractPlugin
 
 3. webpack热更新原理
 
+
 4. 优化构建速度
+webpack-bundle-analyzer，
 
 ### 算法
 
@@ -229,15 +354,9 @@
 
 7. 单链表反转
 
- 
+8. 取1000个数字里面的质数
 
-8、取1000个数字里面的质数
+9. 找出数组中和为给定值的两个元素，如：[1, 2, 3, 4, 5]中找出和为6的两个元素。
 
- 
-
-9、找出数组中和为给定值的两个元素，如：[1, 2, 3, 4, 5]中找出和为6的两个元素。
-
- 
-
-10、线性顺序存储结构和链式存储结构有什么区别？以及优缺点
+10. 线性顺序存储结构和链式存储结构有什么区别？以及优缺点
 
